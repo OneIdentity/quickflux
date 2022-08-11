@@ -1,4 +1,4 @@
-QT += core
+QT += core qmltest
 QT -= gui
 
 CONFIG += c++17
