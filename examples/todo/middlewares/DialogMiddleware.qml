@@ -12,7 +12,7 @@ Middleware {
         id: dialog
         title: "Confirmation"
         text: "Are you sure want to show completed tasks?"
-        standardButtons: StandardButton.Ok | StandardButton.Cancel
+        buttons: MessageDialog.Ok | MessageDialog.Cancel
 
         onAccepted: {
             next(ActionTypes.setShowCompletedTasks, {value: true});

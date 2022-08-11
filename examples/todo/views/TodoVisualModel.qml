@@ -3,14 +3,14 @@ import QuickFlux 1.1
 import "../stores"
 import "../actions"
 
-VisualDataModel {
+DelegateModel {
 
     model: MainStore.todo.model
 
     filterOnGroup: MainStore.userPrefs.showCompletedTasks ? "" : "nonCompleted"
 
     groups: [
-        VisualDataGroup {
+        DelegateModelGroup {
             name: "nonCompleted"
             includeByDefault: true
         }
